@@ -1,0 +1,79 @@
+{
+  "name": "@oauthanon/home",
+  "version": "0.1.0",
+  "license": "CC-BY-NC-4.0",
+  "author": "Chris Ackerman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shakeskeyboarde/oauthanon-home2.git"
+  },
+  "scripts": {
+    "clean": "del-cli lib dist coverage",
+    "test": "del-cli coverage && tsc && eslint src && jest --passWithNoTests",
+    "build": "del-cli dist && webpack --mode=production",
+    "start": "webpack serve"
+  },
+  "engines": {
+    "node": ">= 15"
+  },
+  "config": {
+    "webpack": {
+      "title": "AuthAnon.io",
+      "publicPath": "/",
+      "devServerPort": 3000
+    }
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "core-js": "^3.9.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.33",
+    "@types/prettier": "^2.2.2",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-const-enum": "^1.0.1",
+    "compression-webpack-plugin": "^7.1.2",
+    "copy-webpack-plugin": "^8.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.1.2",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.2.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.24.4",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
