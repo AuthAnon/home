@@ -1,3 +1,3 @@
-# @oauthanon/home
+# @authanon/home
 
 TODO: Add documentation.
