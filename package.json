@@ -5,7 +5,7 @@
   "author": "Chris Ackerman",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Shakeskeyboarde/oauthanon-home2.git"
+    "url": "https://github.com/AuthAnon/home.git"
   },
   "scripts": {
     "clean": "del-cli lib dist coverage",
@@ -32,10 +32,16 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "core-js": "^3.9.1",
+    "@oauthanon/koa": "^1.0.1",
+    "highlight.js": "^10.6.0",
+    "normalize.css": "^8.0.1",
+    "polished": "^4.1.0",
     "react": "^17.0.1",
+    "react-css-in-js": "^1.2.9",
     "react-dom": "^17.0.1",
-    "regenerator-runtime": "^0.13.7"
+    "react-feather": "^2.0.9",
+    "react-router-dom": "^5.2.0",
+    "react-syntax-highlighter": "^15.4.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
@@ -50,6 +56,8 @@
     "@types/prettier": "^2.2.2",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-syntax-highlighter": "^13.5.0",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "babel-jest": "^26.6.3",
